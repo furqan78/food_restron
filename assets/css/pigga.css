@@ -11502,7 +11502,6 @@ section.has-overlay {
 
 section.has-overlay * {
   position: static;
-  z-index: 9;
 }
 
 section.has-overlay:after {
@@ -11521,7 +11520,14 @@ section.has-img-bg {
   position: relative;
   background: url(../imgs/section.jpg) no-repeat center top fixed;
   background-size: cover;
-  color: #fff;
+}
+
+section.has-img-bg h6 {
+  color: white;
+}
+
+section.has-img-bg h3 {
+  color: white;
 }
 
 section.has-img-bg * {
@@ -11556,6 +11562,7 @@ section.has-img-bg:after {
 .section-title {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
   margin-bottom: 15px;
+  opacity: 1;
 }
 
 @media (min-width: 992px) {
@@ -11575,8 +11582,89 @@ section.has-img-bg:after {
   }
 }
 
+@media (max-width: 500px) {
+  .dropdown {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .section-secondary-title {
   font-size: 17px;
   opacity: .7;
   margin-bottom: 15px;
+}
+
+ /* dropdown css */
+
+ .dropdown {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.dropbtn {
+  background-color: white;
+  color: #808080;
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  border: 1px solid #808080;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.toggle-element {
+  display: none;
+}
+
+.d-content {
+  position: absolute !important;
+}
+
+.items-center {
+  margin: auto 0;
+}
+
+.dropdown-arrow {
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateY(-50%);
 }
