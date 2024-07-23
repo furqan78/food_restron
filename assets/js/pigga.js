@@ -69,3 +69,14 @@ window.onclick = function(event) {
 window.onload = function() {
     toggleElement('monday-meal-1', 'monday-meal-2', 'Monday');
 }
+
+function sendMessage(message) {            
+   // Encode the message for URL
+   var encodedMessage = encodeURIComponent(message);
+   
+   // WhatsApp share URL
+   var whatsappUrl = "https://wa.me/9179544270?text=" + encodedMessage;
+   
+   // Open WhatsApp share URL
+   window.open(whatsappUrl, '_blank');
+}
