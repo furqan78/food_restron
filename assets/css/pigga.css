@@ -11654,6 +11654,10 @@ section.has-img-bg:after {
   display: none;
 }
 
+.plan-toggle-element {
+  display: none;
+}
+
 .d-content {
   position: absolute !important;
 }
@@ -11773,8 +11777,4 @@ section.has-img-bg:after {
     margin: 0 0 15px 0 !important;
     width: 100%;
   }
-}
-
-.once-in-a-day-plan {
-  margin-top: 10rem ;
 }

@@ -30,6 +30,26 @@ function toggleElement(meal1, meal2, elementText) {
     document.querySelector('.dropdown-content').classList.remove('show');
 }
 
+function togglePlan(elementText) {
+    var elements = document.getElementsByClassName('plan-toggle-element');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+    }
+    var planElement;
+    if (elementText === 'Two meal in a day') {
+        planElement = document.getElementById('two-meal-plan');
+    } else {
+        planElement = document.getElementById('one-meal-plan');
+    }
+    if (planElement.style.display === "none" || planElement.style.display === "") {
+        planElement.style.display = "flex";
+    } else {
+        planElement.style.display = "none";
+    }
+    document.getElementById('meal-dropdownButton').textContent = elementText;
+    document.querySelector('.meal-dropdown-content').classList.remove('show');
+}
+
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
@@ -66,8 +86,27 @@ window.onclick = function(event) {
     }
 }
 
+
+// Get the button and add a click event listenerr
+document.getElementById('meal-dropdownToggle').addEventListener('click', function() {
+    document.querySelector('.meal-dropdown-content').classList.toggle('show');
+});
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn *')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
 window.onload = function() {
     toggleElement('monday-meal-1', 'monday-meal-2', 'Monday');
+    togglePlan('Two meal in a day');
 }
 
 function sendMessage(message) {            
