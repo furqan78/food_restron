@@ -36,7 +36,7 @@ function togglePlan(elementText) {
         elements[i].style.display = 'none';
     }
     var planElement;
-    if (elementText === 'Two meal in a day') {
+    if (elementText === 'Two meals in a day') {
         planElement = document.getElementById('two-meal-plan');
     } else {
         planElement = document.getElementById('one-meal-plan');
@@ -106,7 +106,7 @@ window.onclick = function(event) {
 
 window.onload = function() {
     toggleElement('monday-meal-1', 'monday-meal-2', 'Monday');
-    togglePlan('Two meal in a day');
+    togglePlan('Two meals in a day');
 }
 
 function sendMessage(message) {            
