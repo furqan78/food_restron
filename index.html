@@ -24,7 +24,7 @@
             </a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="#home">CALL US : <span
+                    <a class="nav-link text-primary" href="tel:+919179544270">CALL US : <span
                             class="pl-2 text-muted">9179544270</span></a>
                 </li>
             </ul>
@@ -41,17 +41,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#service">Menu</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Team</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#testmonial">Our Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -70,59 +67,6 @@
         </div>
     </header>
     <!-- End Of Page Header -->
-    <!-- About Section -->
-    <!-- <section id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h6 class="section-subtitle">Opening Times</h6>
-                    <h3 class="section-title">Working Times</h3>
-                    <p class="mb-1 font-weight-bold">Monday - Thursday : <span
-                            class="font-weight-normal pl-2 text-muted">7:00 am - 12:00 pm</span></p>
-                    <p class="mb-1 font-weight-bold">Friday - Saturday : <span
-                            class="font-weight-normal pl-2 text-muted">7:00 am - Midnight</span></p>
-                    <p class="mb-1 font-weight-bold">Saturday - Sunday : <span
-                            class="font-weight-normal pl-2 text-muted">9:00 am - 12:00 pm</span></p>
-
-                    <a href="#book-table" class="btn btn-primary btn-sm w-md mt-4">Book a table</a>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col">
-                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
-                                src="assets/imgs/about-1.jpg" class="w-100 rounded shadow">
-                        </div>
-                        <div class="col">
-                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
-                                src="assets/imgs/about-2.jpg" class="w-100 rounded shadow">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-devider my-6 transparent"></div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h6 class="section-subtitle">The Great Story</h6>
-                    <h3 class="section-title">Our Culinary Journey</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illo a, aut, eum nesciunt obcaecati
-                        deserunt ipsam nostrum voluptate recusandae?</p>
-                </div>
-                <div class="col-md-6 order-1 order-sm-first">
-                    <div class="row">
-                        <div class="col">
-                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
-                                src="assets/imgs/about-3.jpg" class="w-100 rounded shadow">
-                        </div>
-                        <div class="col">
-                            <img alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
-                                src="assets/imgs/about-4.jpg" class="w-100 rounded shadow">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End OF About Section -->
 
     <!-- Service Section -->
     <section id="service" class="pattern-style-4 has-overlay">
@@ -137,26 +81,24 @@
                     <span>Food</span>
                 </P>
                 <div>
-                <div class="dropbtn" id="dropdownToggle">
-                    <div id="dropdownButton">Monday</div>
-                    <div class="dropdown-arrow"></div>
+                    <div class="dropbtn" id="dropdownToggle">
+                        <div id="dropdownButton">Monday</div>
+                        <div class="dropdown-arrow"></div>
+                    </div>
+                    <div class="dropdown-content d-content">
+                        <a onclick="toggleElement('monday-meal-1', 'monday-meal-2', 'Monday')">Monday</a>
+                        <a onclick="toggleElement('tuesday-meal-1', 'tuesday-meal-2', 'Tuesday')">Tuesday</a>
+                        <a
+                            onclick="toggleElement('wednessday-meal-1', 'wednessday-meal-2', 'Wednessday')">Wednessday</a>
+                        <a onclick="toggleElement('thursday-meal-1', 'thursday-meal-2', 'Thursday')">Thursday</a>
+                        <a onclick="toggleElement('friday-meal-1', 'friday-meal-2', 'Friday')">Friday</a>
+                        <a onclick="toggleElement('saturday-meal-1', 'saturday-meal-2', 'Saturday')">Saturday</a>
+                    </div>
                 </div>
-                <div class="dropdown-content d-content">
-                    <a onclick="toggleElement('monday-meal-1', 'monday-meal-2', 'Monday')">Monday</a>
-                    <a onclick="toggleElement('tuesday-meal-1', 'tuesday-meal-2', 'Tuesday')">Tuesday</a>
-                    <a onclick="toggleElement('wednessday-meal-1', 'wednessday-meal-2', 'Wednessday')">Wednessday</a>
-                    <a onclick="toggleElement('thursday-meal-1', 'thursday-meal-2', 'Thursday')">Thursday</a>
-                    <a onclick="toggleElement('friday-meal-1', 'friday-meal-2', 'Friday')">Friday</a>
-                    <a onclick="toggleElement('saturday-meal-1', 'saturday-meal-2', 'Saturday')">Saturday</a>
-                </div>
-            </div>
             </div>
             <div class="row">
                 <div id="monday-meal-1" class="col-md-6 mb-4 toggle-element">
                     <a href="javascrip:void(0)" class="custom-list">
-                        <!-- <div class="img-holder">
-                            <img src="assets/imgs/dish-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
-                        </div> -->
                         <div class="info">
                             <div class="head clearfix">
                                 <h5 class="title float-left">Monday After Noon</h5>
@@ -396,9 +338,6 @@
                 </div>
                 <div id="saturday-meal-2" class="col-md-6 mb-4 toggle-element">
                     <a href="javascrip:void(0)" class="custom-list">
-                        <!-- <div class="img-holder">
-                            <img src="assets/imgs/dish-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
-                        </div> -->
                         <div class="info">
                             <div class="head clearfix">
                                 <h5 class="title float-left">Saturday Night</h5>
@@ -569,62 +508,6 @@
     </section>
     <!-- End of Menu Section -->
 
-    <!-- Team Section -->
-    <!-- <section id="team">
-        <div class="container">
-            <h6 class="section-subtitle text-center">Great Team</h6>
-            <h3 class="section-title mb-5 text-center">Talented Chefs</h3>
-            <div class="row">
-                <div class="col-md-4 my-3">
-                    <div class="team-wrapper text-center">
-                        <img src="assets/imgs/chef-1.jpg" class="circle-120 rounded-circle mb-3 shadow"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
-                        <h5 class="my-3">Brian Scott</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
-                            reiciendis!</p>
-                        <h6 class="socials mt-3">
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="team-wrapper text-center">
-                        <img src="assets/imgs/chef-2.jpg" class="circle-120 rounded-circle mb-3 shadow"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
-                        <h5 class="my-3">Edward Harris</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
-                            reiciendis!</p>
-                        <h6 class="socials mt-3">
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
-                        </h6>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="team-wrapper text-center">
-                        <img src="assets/imgs/chef-3.jpg" class="circle-120 rounded-circle mb-3 shadow"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
-                        <h5 class="my-3">Richard Reb</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
-                            reiciendis!</p>
-                        <h6 class="socials mt-3">
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of Team Section -->
-
     <!-- Testmonial Section -->
     <section id="testmonial" class="pattern-style-3">
         <div class="container">
@@ -637,20 +520,21 @@
                     <span>Home Meals</span>
                 </P>
                 <div>
-                <div class="dropbtn meal-dropbtn" id="meal-dropdownToggle">
-                    <div id="meal-dropdownButton">Two meals in a day</div>
-                    <div class="dropdown-arrow"></div>
+                    <div class="dropbtn meal-dropbtn" id="meal-dropdownToggle">
+                        <div id="meal-dropdownButton">Two meals in a day</div>
+                        <div class="dropdown-arrow"></div>
+                    </div>
+                    <div class="dropdown-content d-content meal-dropdown-content">
+                        <a onclick="togglePlan('Two meals in a day')">Two meals in a day</a>
+                        <a onclick="togglePlan('One meal in a day')">One meal in a day</a>
+                    </div>
                 </div>
-                <div class="dropdown-content d-content meal-dropdown-content">
-                    <a onclick="togglePlan('Two meals in a day')">Two meals in a day</a>
-                    <a onclick="togglePlan('One meal in a day')">One meal in a day</a>
-                </div>
-            </div>
             </div>
             <div id="two-meal-plan" class="pricing-wrapper plan-toggle-element">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/dish.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/dish.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Demo Meal</h6>
@@ -666,11 +550,13 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;200/Two Meals</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book a Demo Meal')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book a Demo Meal')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/fast-delivery.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/fast-delivery.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Weekly</h6>
@@ -686,11 +572,13 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;1,200/Week</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book Two Meals in a Day Weekly Subscription.')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book Two Meals in a Day Weekly Subscription.')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/takeaway.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/takeaway.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Monthly</h6>
@@ -706,14 +594,16 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;4,500/Month</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book Two Meals in a Day Monthly Subscription.')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book Two Meals in a Day Monthly Subscription.')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
 
             </div>
             <div id="one-meal-plan" class="pricing-wrapper plan-toggle-element">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/dish.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/dish.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Demo Meal</h6>
@@ -729,11 +619,13 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;120/Meal</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book a Demo Meal.')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book a Demo Meal.')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/fast-delivery.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/fast-delivery.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Weekly</h6>
@@ -749,11 +641,13 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;650/Week</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book One Meal in a Day Weekly Subscription.')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book One Meal in a Day Weekly Subscription.')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/takeaway.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="pricing-card-icon" src="assets/imgs/takeaway.png"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title text-primary">Monthly</h6>
@@ -769,62 +663,40 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;2,450/Month</span>
                     </div>
-                    <button onclick="sendMessage('Hey, I want to book One Meal in a Day Monthly Subscription.')" class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
+                    <button onclick="sendMessage('Hey, I want to book One Meal in a Day Monthly Subscription.')"
+                        class="btn btn-primary mt-3 pricing-card-btn">Book Now</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- End of Testmonial Section -->
 
-
-    <!-- Book Table Section -->
-    <!-- <section id="book-table" class="bg-white">
+    <section id="about" class="pattern-style-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="assets/imgs/contact.jpg"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
-                        class="w-100 rounded shadow">
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone">
-                        </div>
-                        <div class="form-group">
-                            <input type="datetime-local" class="form-control" name="date">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" name="seats" placeholder="Seats">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Book A Table</button>
-                        <small class="form-text text-muted mt-3">We don't span customers. Check our <a href="#">Privacy
-                                Policy</a></small>
-                    </form>
-                </div>
+            <h6 class="section-subtitle text-center">About</h6>
+            <h3 class="section-title mb-5 text-center"><span class="text-primary">TIFFIN</span> DOOR</h3>
+            <div class="about-section mb-6">
+                <img src="./assets/imgs/food-delivery-banner.png" class="width-20-percent" alt="" />
+                <p class="width-80-percent">
+                    We make it easy for you to enjoy tasty, homemade meals without any of the work. Our food is cooked by moms who know how to make delicious, comforting dishes, just like you’d have at home. We use fresh ingredients and family recipes to create meals that are both healthy and satisfying. Whether you’re busy at work, studying, or just want a break from cooking, We provide food service all over Bhopal. Tiffin Door brings the warmth of home-cooked food right to your doorstep.
+                </p>
             </div>
         </div>
-    </section> -->
-    <!-- End OF Book Table Section -->
+    </section>
 
     <!-- Prefooter Section  -->
     <div class="py-4 border border-lighter border-bottom-0 border-left-0 border-right-0 bg-dark">
         <div class="container">
             <div class="row justify-content-between align-items-center text-center">
-                <div class="col-md-3 text-md-left mb-3 mb-md-0">
+                <a href="./index.html" class="col-md-3 text-md-left mb-3 mb-md-0">
                     <img src="assets/imgs/brand-logo.png" width="100"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page"
                         class="mb-0">
-                </div>
+                </a>
                 <div class="col-md-9 text-md-right">
-                    <a href="#" class="px-3"><small class="font-weight-bold">Our Company</small></a>
-                    <a href="#" class="px-3"><small class="font-weight-bold">Our Location</small></a>
-                    <a href="#" class="px-3"><small class="font-weight-bold">Help Center</small></a>
-                    <a href="components.html" class="pl-3"><small class="font-weight-bold">Components</small></a>
+
+                    <a href="privacy_policy.html" class="pl-3"><small class="font-weight-bold">Privacy
+                            Policy</small></a>
                 </div>
             </div>
         </div>
@@ -843,10 +715,13 @@
                 </div>
                 <div class="d-none d-md-block">
                     <h6 class="small mb-0">
-                        <a href="javascript:void(0)" class="px-2"><i class="ti-facebook"></i></a>
-                        <a href="javascript:void(0)" class="px-2"><i class="ti-twitter"></i></a>
-                        <a href="javascript:void(0)" class="px-2"><i class="ti-instagram"></i></a>
-                        <a href="javascript:void(0)" class="px-2"><i class="ti-google"></i></a>
+                        <a href="https://www.instagram.com/tiffindoor/" target="_blank" class="px-2"><i
+                            class="ti-facebook"></i></a>
+                            <a href="https://www.instagram.com/tiffindoor/" target="_blank" class="px-2"><i
+                                class="ti-twitter"></i></a>
+                        <a href="https://www.instagram.com/tiffindoor/" target="_blank" class="px-2"><i
+                                class="ti-instagram"></i></a>
+                        <a href="mailto:tiffin.doorstep@gmail.com" class="px-2"><i class="ti-email"></i></a>
                     </h6>
                 </div>
             </div>
