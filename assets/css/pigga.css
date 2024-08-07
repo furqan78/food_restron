@@ -11799,6 +11799,10 @@ section.has-img-bg:after {
   .width-80-percent {
     width: 100% !important;
   }
+
+  .reserved-social-media {
+    flex-direction: column;
+  }
 }
 
 .sub-heading {
