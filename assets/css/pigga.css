@@ -11645,7 +11645,7 @@ section.has-img-bg:after {
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
 
 .toggle-element {
@@ -11817,4 +11817,27 @@ section.has-img-bg:after {
 
 .width-80-percent {
   width: 80%;
+}
+
+.transparent-dropdown {
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  border: 1px solid #808080;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: auto;
+  width: fit-content;
+}
+
+.one-meal-dropdown-container {
+  margin: auto;
+  width: fit-content;
 }

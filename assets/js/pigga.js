@@ -50,6 +50,26 @@ function togglePlan(elementText) {
     document.querySelector('.meal-dropdown-content').classList.remove('show');
 }
 
+function toggleOneMealShift(elementText) {
+    var elements = document.getElementsByClassName('shift-toggle-element');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+    }
+    var planElement;
+    if (elementText === 'Afternoon Meal') {
+        planElement = document.getElementById('afternoon');
+    } else {
+        planElement = document.getElementById('night');
+    }
+    if (planElement.style.display === "none" || planElement.style.display === "") {
+        planElement.style.display = "flex";
+    } else {
+        planElement.style.display = "none";
+    }
+    document.getElementById('one-meal-dropdownButton').textContent = elementText;
+    document.querySelector('.one-meal-dropdown-content').classList.remove('show');
+}
+
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
@@ -104,9 +124,14 @@ window.onclick = function(event) {
     }
 }
 
+document.getElementById('one-meal-dropdownToggle').addEventListener('click', function() {
+    document.querySelector('.one-meal-dropdown-content').classList.toggle('show');
+});
+
 window.onload = function() {
     toggleElement('monday-meal-1', 'monday-meal-2', 'Monday');
     togglePlan('Two meals in a day');
+    toggleOneMealShift('Afternoon Meal');
 }
 
 function sendMessage(message) {            

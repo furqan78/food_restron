@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /privacy_policy.html
+Disallow: /index.html
