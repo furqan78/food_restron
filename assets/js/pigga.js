@@ -144,3 +144,35 @@ function sendMessage(message) {
    // Open WhatsApp share URL
    window.open(whatsappUrl, '_blank');
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      // Get the button that triggered the modal
+      var button = $(event.relatedTarget);
+      
+      // Extract data from the button's data-* attribute
+      var instructions = button.data('description');
+      var message = button.data('message');
+      // Format the instructions for display in the modal
+      if(instructions){
+      var formattedInstructions = instructions.replace(/\n/g, '<br>');
+      }
+      
+      // Update the modal's content using the formatted data
+      var modal = $(this);
+      modal.find('.modal-body #modalContent').html(formattedInstructions);
+      modal.find('.modal-body #modalMessage').text(message);
+    });
+  });
+
+  $('#proceedWithBooking').on('click', function() {
+    var modal = $('#exampleModal');
+    
+    let message = modal.find('#modalMessage').text();
+    
+    // Call the function and pass the data
+    sendMessage(message);
+    
+    // Optionally, close the modal after saving changes
+    modal.modal('hide');
+  });

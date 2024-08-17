@@ -11803,6 +11803,14 @@ section.has-img-bg:after {
   .reserved-social-media {
     flex-direction: column;
   }
+
+  .mobile-label {
+    display: block !important;
+  }
+
+  .desktop-label {
+    display: none;
+  }
 }
 
 .sub-heading {
@@ -11840,4 +11848,25 @@ section.has-img-bg:after {
 .one-meal-dropdown-container {
   margin: auto;
   width: fit-content;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-btn {
+  padding: 0.2rem 1rem;
+}
+
+.free-delivery-label{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+}
+
+.mobile-label {
+  display: none;
 }
