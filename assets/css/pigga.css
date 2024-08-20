@@ -11863,8 +11863,8 @@ section.has-img-bg:after {
   padding: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
   opacity: 1;
+  color: yellowgreen !important;
 }
 
 .mobile-label {
