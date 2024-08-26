@@ -11715,7 +11715,7 @@ section.has-img-bg:after {
 
 .pricing-wrapper .pricing-card-footer span {
   /* font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300))); */
-  font-size: 1.7rem !important;
+  font-size: 1.6rem;
   font-weight: 600;
   opacity: .8;
 }
@@ -11724,7 +11724,8 @@ section.has-img-bg:after {
   position: relative;
   right: -6px;
   top: -6px;
-  font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1300 - 300)));
+  /* font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1300 - 300))); */
+  font-size: 1.6rem;
 }
 
 .pricing-wrapper .pricing-card-title {
@@ -11875,5 +11876,5 @@ section.has-img-bg:after {
 .original-price {
   text-decoration: line-through;
   color: #999;
-  font-size: 1.3rem !important;
+  font-size: 1.2rem !important;
 }

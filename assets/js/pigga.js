@@ -140,7 +140,6 @@ function sendMessage(message) {
    
    // WhatsApp share URL
    var whatsappUrl = "https://wa.me/6263772561?text=" + encodedMessage;
-   
    // Open WhatsApp share URL
    window.open(whatsappUrl, '_blank');
 }
