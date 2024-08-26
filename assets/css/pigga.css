@@ -11715,7 +11715,7 @@ section.has-img-bg:after {
 
 .pricing-wrapper .pricing-card-footer span {
   /* font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300))); */
-  font-size: 1.7rem;
+  font-size: 1.7rem !important;
   font-weight: 600;
   opacity: .8;
 }
