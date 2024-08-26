@@ -11870,3 +11870,9 @@ section.has-img-bg:after {
 .mobile-label {
   display: none;
 }
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.3rem !important;
+}
