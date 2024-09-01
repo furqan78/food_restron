@@ -648,8 +648,8 @@
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu." data-message="
@@ -697,8 +697,8 @@
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
@@ -748,8 +748,8 @@
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
@@ -801,8 +801,8 @@
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu." data-message="
@@ -850,8 +850,8 @@ Home-cooked food gives you peace of mind about what you're eating!
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
@@ -901,8 +901,8 @@ Home-cooked food gives you peace of mind about what you're eating!
                     </div>
                     <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
                     2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered by 1 PM.
-                    4. Night meal delivered by 8 PM.
+                    3. Afternoon meal delivered between 12 PM to 2 PM.
+                    4. Night meal delivered between 7 PM to 9 PM.
                     5. Amount collected on the first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
@@ -953,14 +953,27 @@ Home-cooked food gives you peace of mind about what you're eating!
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Important</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Please fill the Details</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
+            <h6 class="important-tag">Important:</h6>
                     <p id="modalContent"></p>
                     <p id="modalMessage" hidden></p>
+                    <div class="form-container">
+                    <form id="customerForm">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+            
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+            
+                        <input type="tel" id="phone" name="phone" placeholder="Mobile no" required>
+
+                        <input type="text" id="lunch-address" name="lunch-address" placeholder="Lunch Delivery Address">
+                        <input type="text" id="dinner-address" name="dinner-address" placeholder="Dinner Delivery Address">
+                    </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
