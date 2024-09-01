@@ -36,15 +36,23 @@ function togglePlan(elementText) {
         elements[i].style.display = 'none';
     }
     var planElement;
+    var addressElement;
     if (elementText === 'Two meals in a day') {
         planElement = document.getElementById('two-meal-plan');
+        addressElement = document.getElementById('two-meal-address');
     } else {
         planElement = document.getElementById('one-meal-plan');
+        addressElement = document.getElementById('one-meal-address');
     }
     if (planElement.style.display === "none" || planElement.style.display === "") {
         planElement.style.display = "flex";
     } else {
         planElement.style.display = "none";
+    }
+    if (addressElement.style.display === "none" || addressElement.style.display === "") {
+        addressElement.style.display = "block";
+    } else {
+        addressElement.style.display = "none";
     }
     document.getElementById('meal-dropdownButton').textContent = elementText;
     document.querySelector('.meal-dropdown-content').classList.remove('show');
@@ -74,6 +82,22 @@ function validateEmail(email) {
     // Regular expression for basic email validation
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email);
+}
+
+function copyLunchAddress() {
+    // Get the value from the lunch address input
+    const lunchAddress = document.getElementById("lunch-address").value;
+
+    if(!lunchAddress){
+        alert("Please enter lunch address first");
+        return;
+    }
+
+    // Set the value of the dinner address input to be the same as the lunch address
+    document.getElementById("dinner-address").value = lunchAddress;
+
+    // Optionally, you can focus on the dinner address field after copying
+    document.getElementById("dinner-address").focus();
 }
 
 // smooth scroll
@@ -182,33 +206,85 @@ $('#proceedWithBooking').on('click', function () {
     const dinnerAddressInput = document.getElementById("dinner-address");
     const dinnerAddress = dinnerAddressInput.value;
 
-    switch (true) {
-        case !name:
-            nameInput.focus();
-            alert("Please enter valid name");
-            break;
-        case name.length < 3:
-            nameInput.focus();
-            alert("Name should have atleast 3 characters");
-            break;
-        case !validateEmail(email):
-            emailInput.focus();
-            alert("Please enter valid email");
-            break;
-        case phone.length != 10:
-            phoneInput.focus();
-            alert("Please enter valid phone");
-            break;
-        default:
-            var modal = $('#exampleModal');
-            let message = modal.find('#modalMessage').text();
-            message = message + `\n\n Name: ${name} \n Email: ${email} \n Mobile no: ${phone} \n Lunch Delivery Address: ${lunchAddress} 
-            \n Dinner Delivery Address: ${dinnerAddress}`;
-            // Call the function and pass the data
-            sendMessage(message);
-            // Optionally, close the modal after saving changes
-            modal.modal('hide');
-            document.getElementById("customerForm").reset();
-            break;
+    const selectedAddressType = document.querySelector('input[name="addressType"]:checked').value;
+    const addressInput = document.getElementById("address");
+    const address = addressInput.value;
+
+    const meal = document.getElementById('meal-dropdownButton').textContent;
+
+    if(meal == "Two meals in a day"){
+        switch (true) {
+            case !name:
+                nameInput.focus();
+                alert("Please enter valid name");
+                break;
+            case name.length < 3:
+                nameInput.focus();
+                alert("Name should have atleast 3 characters");
+                break;
+            case !validateEmail(email):
+                emailInput.focus();
+                alert("Please enter valid email");
+                break;
+            case phone.length != 10:
+                phoneInput.focus();
+                alert("Please enter valid phone");
+                break;
+            case !lunchAddress:
+                lunchAddressInput.focus();
+                alert("Please enter lunch address");
+                break;
+            case !dinnerAddress:
+                dinnerAddressInput.focus();
+                alert("Please enter dinner address");
+                break;
+            default:
+                var modal = $('#exampleModal');
+                let message = modal.find('#modalMessage').text();
+                message = message + `\n\n Name: ${name} \n Email: ${email} \n Mobile no: ${phone} \n Lunch Delivery Address: ${lunchAddress} \n Dinner Delivery Address: ${dinnerAddress}`;
+                // Call the function and pass the data
+                sendMessage(message);
+                // Optionally, close the modal after saving changes
+                modal.modal('hide');
+                document.getElementById("customerForm").reset();
+                break;
+        }
+    }else{
+        switch (true) {
+            case !name:
+                nameInput.focus();
+                alert("Please enter valid name");
+                break;
+            case name.length < 3:
+                nameInput.focus();
+                alert("Name should have atleast 3 characters");
+                break;
+            case !validateEmail(email):
+                emailInput.focus();
+                alert("Please enter valid email");
+                break;
+            case phone.length != 10:
+                phoneInput.focus();
+                alert("Please enter valid phone");
+                break;
+            case !selectedAddressType:
+                alert("Please select Meal Type");
+                break;
+            case !address:
+                addressInput.focus();
+                alert("Please enter valid address");
+                break;
+            default:
+                var modal = $('#exampleModal');
+                let message = modal.find('#modalMessage').text();
+                message = message + `\n\n Name: ${name} \n Email: ${email} \n Mobile no: ${phone} \n Meal Type: ${selectedAddressType} \n Delivery Address: ${address}`;
+                // Call the function and pass the data
+                sendMessage(message);
+                // Optionally, close the modal after saving changes
+                modal.modal('hide');
+                document.getElementById("customerForm").reset();
+                break;
+        }
     }
+
 });

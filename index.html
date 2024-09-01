@@ -970,8 +970,22 @@ Home-cooked food gives you peace of mind about what you're eating!
             
                         <input type="tel" id="phone" name="phone" placeholder="Mobile no" required>
 
-                        <input type="text" id="lunch-address" name="lunch-address" placeholder="Lunch Delivery Address">
-                        <input type="text" id="dinner-address" name="dinner-address" placeholder="Dinner Delivery Address">
+                        <div id="two-meal-address" class="plan-toggle-element">
+                            <input type="text" id="lunch-address" name="lunch-address" placeholder="Lunch Delivery Address" required>
+                            <p type="button" class="sameas-lunch" onclick="copyLunchAddress()">Same as Lunch Address</p>
+                            <input type="text" id="dinner-address" name="dinner-address" placeholder="Dinner Delivery Address" required>
+                        </div>
+
+                        <div id="one-meal-address" class="plan-toggle-element">
+                            <div class="radio-group">
+                                <label>Meal Type: </label>
+                                <input type="radio" id="lunchRadio" name="addressType" value="Lunch" checked>
+                                <label for="lunchRadio">Lunch </label>
+                                <input type="radio" id="dinnerRadio" name="addressType" value="Dinner">
+                                <label for="dinnerRadio">Dinner</label>
+                            </div>
+                            <input type="text" id="address" name="address" placeholder="Delivery Address" required>
+                        </div>
                     </div>
                     </form>
                 </div>
