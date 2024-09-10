@@ -11929,3 +11929,7 @@ input[type="radio"] {
   align-items: center;
   gap: 0.5rem;
 }
+
+.menu-meal {
+  justify-content: center;
+}
