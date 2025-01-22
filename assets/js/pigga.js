@@ -88,7 +88,7 @@ function copyLunchAddress() {
     // Get the value from the lunch address input
     const lunchAddress = document.getElementById("lunch-address").value;
 
-    if(!lunchAddress){
+    if (!lunchAddress) {
         alert("Please enter lunch address first");
         return;
     }
@@ -212,7 +212,7 @@ $('#proceedWithBooking').on('click', function () {
 
     const meal = document.getElementById('meal-dropdownButton').textContent;
 
-    if(meal == "Two meals in a day"){
+    if (meal == "Two meals in a day") {
         switch (true) {
             case !name:
                 nameInput.focus();
@@ -249,7 +249,7 @@ $('#proceedWithBooking').on('click', function () {
                 document.getElementById("customerForm").reset();
                 break;
         }
-    }else{
+    } else {
         switch (true) {
             case !name:
                 nameInput.focus();
@@ -287,4 +287,69 @@ $('#proceedWithBooking').on('click', function () {
         }
     }
 
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-button");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            // Remove 'active' class from all tabs and panels
+            tabs.forEach(t => t.classList.remove("active"));
+            panels.forEach(p => p.classList.remove("active"));
+
+            // Add 'active' class to the clicked tab and corresponding panel
+            tab.classList.add("active");
+            const panelId = tab.getAttribute("data-tab");
+            document.getElementById(panelId).classList.add("active");
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Fetch the JSON data
+    fetch('https://tiffin-door-system.vercel.app/api/menu/dishes')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data, " gettting datafdk")
+            displayMenuItems(data);
+        })
+        .catch(error => console.error('Error fetching the menu:', error));
+
+    function displayMenuItems(data) {
+        // Get references to the tab content areas
+        const hommadeFoodTab = document.getElementById('tab-1').querySelector('.row.g-4');
+        // Function to create menu item HTML
+        function createMenuItem(item) {
+            return `
+                <div class="mt-4">
+                    <div class="" style="width: 20rem">
+                    <div style="position: relative;">
+                        <img class="flex-shrink-0 img-fluid" src="${item.image}" alt="" style="width: 100%; height: 10rem; object-fit: cover; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem">
+                        <div style="background-color: green; width: fit-content; position: absolute; top: 0; right: 0; border-top-right-radius: 0.5rem; padding: 0.1rem 0.8rem; font-size: 0.8rem; color: white;">Pure Veg</div>
+                        </div>
+                        <div class="pt-3 m-0 pl-2 pr-3 pb-3" style=" width: 20rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);">
+                            <h6 class="d-flex justify-content-between m-0">
+                                <span>${item.dishName}</span>
+                                <span class="text-primary">&#x20B9;90/-</span>
+                            </h6>
+                            <div class='mt-2'>
+                            <small class="fst-italic m-auto">
+                            ${item.description}
+                             </small>
+                             </div>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        // Populate breakfast items
+        data.data.forEach(item => {
+            hommadeFoodTab.innerHTML += createMenuItem(item);
+        });
+    }
 });

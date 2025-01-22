@@ -11814,6 +11814,10 @@ section.has-img-bg:after {
   .desktop-label {
     display: none;
   }
+
+  .food-items-list {
+    justify-content: center;
+  }
 }
 
 .sub-heading {
@@ -11932,4 +11936,25 @@ input[type="radio"] {
 
 .menu-meal {
   justify-content: start;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block !important;
+}
+
+.food-items-list {
+  gap: 2% !important;
+}
+
+.two-meal-weekly-menu {
+  margin-top: 3rem;
 }

@@ -12,6 +12,8 @@
     <link rel="icon" href="assets/imgs/favicon.png" type="image/png">
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css">
+
     <!-- Bootstrap + Pigga main styles -->
     <link rel="stylesheet" href="assets/css/pigga.css">
     <link rel="Canonical" href="https://tiffindoor.in/" />
@@ -38,7 +40,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link text-primary" href="tel:+916263772561">CALL US : <span
-                            class="pl-2 text-muted">6263772561</span></a>
+                            class="pl-2 text-muted">+91 6263772561</span></a>
                 </li>
             </ul>
         </div>
@@ -84,8 +86,49 @@
     </header>
     <!-- End Of Page Header -->
 
+     <!-- Menu Start -->
+     <div id="service" class="pattern-style-4 has-overlay">
+        <div class="container raise-2">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <!-- <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5> -->
+                <h4 class="mb-4">Healthy & Tasty Food Items</h4>
+            </div>
+            <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-2">
+                    <li class="nav-item">
+                        <a id="hommade-tab" class="d-flex align-items-center text-start mx-2 pb-3 tab-button active" data-tab="tab-1" href="#tab-2">
+                            <img src="./assets/imgs/dinner.png" style="width: 2rem; height: 2rem;" alt="Tiffin Door Hommade Menu, Cooked by moms."/>
+                            <div class="ps-3 ml-1">
+                                <small class="text-body">Lovely</small>
+                                <h6 class="mt-n1 mb-0">Hommade Food</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="sequence-tab" class="d-flex align-items-center text-start mx-2 me-0 pb-3 tab-button" data-tab="tab-2" href="#tab-3">
+                            <img src="./assets/imgs/fast-food.png" style="width: 2rem; height: 2rem;" alt="Tiffin Door Hommade Menu, Cooked by moms."/>
+                            <div class="ps-3 ml-1">
+                                <small class="text-body">Special</small>
+                                <h6 class="mt-n1 mb-0">Chinese Combo</h6>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-panel p-0 active">
+                        <div class="row g-4 food-items-list"></div>
+                    </div>
+                    <div id="tab-2" class="tab-panel p-0">
+                        <div class="row g-4 food-items-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
     <!-- Service Section -->
-    <section id="service" class="pattern-style-4 has-overlay">
+    <section id="service" class="pattern-style-4 has-overlay two-meal-weekly-menu">
         <div class="container raise-2">
             <h6 class="section-subtitle text-center">Two Meals in a Day</h6>
             <h3 class="section-title mb-6 pb-3 text-center">Weekly Menu</h3>
@@ -196,7 +239,7 @@
                             <div class="body">
                                 <p>Daal Tadka</p>
                                 <p>Rice</p>
-                                <p>Roti/Chapati</p>
+                                <p>Puri</p>
                                 <p>Aalu Sabzi</p>
                                 <p>Salad</p>
                                 <p>Sweet (Gulab Jamun)</p>
@@ -433,7 +476,7 @@
                                     <div class="body">
                                         <p>Daal Tadka</p>
                                         <p>Rice</p>
-                                        <p>Roti/Chapati</p>
+                                        <p>Puri</p>
                                         <p>Aalu Sabzi</p>
                                         <p>Salad</p>
                                         <p>Sweet (Gulab Jamun)</p>
@@ -694,13 +737,16 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;160/Two Meals</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
-                    7. Meals provided according to the menu." data-message="
+                    7. Meals provided according to the menu.
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Demo Meal* 🎉
 
 🍲 Enjoy the taste of home-cooked meals crafted with care and love
@@ -743,14 +789,16 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;820/Week</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
-                    8. Subscription starts on the day your first meal is delivered." data-message="
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Weekly Plan* 🎉
 
 🍽️ We make your mealtime effortlessly
@@ -794,14 +842,16 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;3,490/Month</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
-                    8. Subscription starts on the day your first meal is delivered." data-message="
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Monthly Plan* 🎉
 
 🍽️ Forget about cooking and washing dishes
@@ -847,13 +897,16 @@
                     <div class="pricing-card-footer">
                         <span>&#x20B9;90/Meal</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
-                    7. Meals provided according to the menu." data-message="
+                    7. Meals provided according to the menu.
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Demo Meal* 🎉
 
 🍲 Enjoy the taste of home-cooked meals crafted with care and love
@@ -896,14 +949,16 @@ Home-cooked food gives you peace of mind about what you're eating!
                     <div class="pricing-card-footer">
                         <span>&#x20B9;410/Week</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
-                    8. Subscription starts on the day your first meal is delivered." data-message="
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Weekly Plan* 🎉
 
 🍽️ We make your mealtime effortlessly
@@ -947,14 +1002,16 @@ Home-cooked food gives you peace of mind about what you're eating!
                     <div class="pricing-card-footer">
                         <span>&#x20B9;1,745/Month</span>
                     </div>
-                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Book between 10 AM to 5 PM meal delivered the next day.
-                    2. Book after 5 PM meal delivered the day after tomorrow.
-                    3. Afternoon meal delivered between 12 PM to 2 PM.
-                    4. Night meal delivered between 7 PM to 9 PM.
-                    5. Amount collected on the first day.
+                    <button data-toggle="modal" data-target="#exampleModal" data-description="1. Lunch bookings or cancellations must be made before 10:00 AM.
+                    2. Dinner bookings or cancellations must be made before 04:00 PM.
+                    3. Lunch meal delivered between 1 PM to 2 PM.
+                    4. Dinner meal delivered between 7 PM to 8 PM.
+                    5. Payment should be paid on the very first day.
                     6. First taste the food then Book a Plan.
                     7. Meals provided according to the menu.
-                    8. Subscription starts on the day your first meal is delivered." data-message="
+                    8. Sweet will not be served in steel tiffins.
+                    9. The steel tiffin should be cleaned before handing it over to the delivery boy.
+                    10. Free delivery is available within a 7 km radius." data-message="
                     🎉 *Monthly Plan* 🎉
 
 🍽️ Forget about cooking and washing dishes
