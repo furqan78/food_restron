@@ -11958,3 +11958,40 @@ input[type="radio"] {
 .two-meal-weekly-menu {
   margin-top: 3rem;
 }
+
+.banner-style {
+  background-color: rgba(33, 37, 41, 0.9);
+  margin: 8rem 0;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.banner-title {
+  font-size: 1.8rem;
+  color: var(--white);
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+.explore-btn {
+  padding: 0.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .banner-style{
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 1.6rem !important;
+  }
+  .explore-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+  }
+}
